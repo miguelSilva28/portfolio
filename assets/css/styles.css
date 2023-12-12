@@ -1,0 +1,91 @@
+main{
+    border: 1px solid #fff;
+    border-radius: 2rem;
+    padding: 2.5rem;
+    margin: 50px 200px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header .photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.header .title {
+    font-family: 'Neue Machina';
+    text-align: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+
+}
+
+.info p {
+    margin: .5rem;
+    font-size: 1.25rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info p::before {
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: .5rem;
+}
+
+.info .person::before {
+    background-image: url('/assets/img/icons/person.svg');
+    
+}
+
+.info .geo::before {
+    background-image: url('/assets/img/icons/geo.svg');
+}
+
+.info .telephone::before {
+    background-image: url('/assets/img/icons/phone-fill.svg');
+}
+
+.info .envelope::before {
+    background-image: url('/assets/img/icons/envelope-fill.svg');
+}
+
+
+@media only screen and (min-width: 768px) {
+    .header {
+        display: grid;
+        grid-template-areas:
+            "photo title"
+            "photo info"
+            ;
+    }
+
+    .header .photo {
+        grid-area: photo;
+        margin: 0 auto;
+    }
+
+    .header .title {
+        grid-area: title;
+        text-align: start;
+        max-width: 200px;
+    }
+    .header .info{
+        grid-area: info;
+    }
+}
