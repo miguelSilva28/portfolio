@@ -13,7 +13,7 @@
       },
       {
         "name": "CSS",
-        "logo": "https://github.com/miguelSilva28/portfolio/blob/main/data/imgs/css.png"
+        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/css.png"
       },
       {
         "name": "JavaScript",
@@ -38,7 +38,7 @@
   "portfolio": [
     {
       "name": "Digital Innovation One - JavaScript",
-      "url": "https://www.dio.me/certificate/57FD259C/share",
+      "url": "https://www.dio.me/certificate/CB153FD8/share",
       "github": false
     },
     {
