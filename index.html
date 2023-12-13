@@ -23,7 +23,6 @@
 
     <!-- CSS -->
 
-    <!-- <link rel="stylesheet" href="assets/css/styles.css">*/ -->
     <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/acordeon.css">
     <link rel="stylesheet" href="assets/css/languages.css">
@@ -37,22 +36,23 @@
 
 <body>
 
-    <main>
+    <main class="main">
         <header class="header">
             <img src="./data/imgs/outrafotomiguel.jpeg" alt="Picture from Miguel Silva" class="photo" id="profile.picture">
-
+         <div class="header-content">
             <h1 class="title">Hi, <br>I am <span id="profile.name">Miguel Silva</span></h1>
 
-            <div class="info">
-                <p class="person" id="profile.job">Junior Developer</p>
-                <p class="geo" id="profile.location">Vila nova de Gaia - Porto</p>
-                <p class="telephone">
+            <div class="information">
+                <p class="job" id="profile.job">Junior Developer</p>
+                <p class="location" id="profile.location">Vila nova de Gaia - Porto</p>
+                <p class="phone">
                     <a href="tel: +351 932489204" id="profile.phone">+351 932489204</a>
                 </p>
-                <p class="envelope">
+                <p class="email">
                     <a href="mailto:miguelassis28@gmail.com" id="profile.email">miguelassis28@gmail.com</a>
                 </p>
             </div>
+         </div>
 
         </header>
 
@@ -66,17 +66,6 @@
                     <section class="tools">
                         <h3>Professional Skills:</h3>
                         <ul id="profile.skills.hardSkills">
-                            <li>
-                                <img src="/assets/img/icons/skills/css3-alt.svg" alt="css" title="CSS">
-                            </li>
-
-                            <li>
-                                <img src="/assets/img/icons/skills/html5.svg" alt="html5" title="HTML5">
-                            </li>
-
-                            <li>
-                                <img src="/assets/img/icons/skills/js.svg" alt="JavaScript" title="JavaScript">
-                            </li>
                         </ul>
                     </section>
 
@@ -99,7 +88,7 @@
             </button>
 
             <div class="content">
-                <ul class="languages" id="languages">
+                <ul class="languages" id="profile.languages">
                     <li>Portuguese</li>
                     <li>English</li>
                 </ul>
